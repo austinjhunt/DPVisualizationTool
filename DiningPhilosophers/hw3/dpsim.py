@@ -8,9 +8,8 @@ from DiningPhilosophers.hw3.StoppableThread import *
 win = GraphWin('Dining Philosophers', 500, 500)
 
 # draw table and philosophers and chopsticks, ready to eat
-table = Table()
-table.table1.draw(win)
-table.table2.draw(win)
+table = Table(Point(250,250),win)
+
 
 philosoph0 = PhilosopherBoi(0, 220, 0, 270, 398, win)
 philosoph1 = PhilosopherBoi(0, 220, 0, 113, 304, win)
@@ -76,21 +75,6 @@ def mainThreadAction():
     p3Eating = False
     p4Eating = False
     while True:
-        philosoph0.LeftArm.undraw()
-        philosoph0.RightArm.undraw()
-
-        philosoph1.LeftArm.undraw()
-        philosoph1.RightArm.undraw()
-
-        philosoph2.LeftArm.undraw()
-        philosoph2.RightArm.undraw()
-
-        philosoph3.LeftArm.undraw()
-        philosoph3.RightArm.undraw()
-
-        philosoph4.LeftArm.undraw()
-        philosoph4.RightArm.undraw()
-
 
         chopsticksCopy = copy.copy(chopsticks)
 
@@ -163,9 +147,8 @@ def mainThreadAction():
             print("Deadlock condition (0,1,2,3,4) ... terminating.")
             break
 
-        time.sleep(.5)
-        # Remove all arms for next iteration
-        print("Time to undraw!")
+        time.sleep(.01)
+        #win.getMouse()
         philosoph0.putDownLeft()
         philosoph0.putDownRight()
 
@@ -185,10 +168,29 @@ def mainThreadAction():
         philosopherThreads[k].stop_me()
 
 
-# philosopher thread
+    win.getMouse()
+    undrawAllArms()
+
+    win.close()
+
+def undrawAllArms():
+    philosoph4.RightArm.undraw()
+    philosoph4.LeftArm.undraw()
+    philosoph3.RightArm.undraw()
+    philosoph3.LeftArm.undraw()
+    philosoph2.RightArm.undraw()
+    philosoph2.LeftArm.undraw()
+    philosoph1.RightArm.undraw()
+    philosoph1.LeftArm.undraw()
+    philosoph0.RightArm.undraw()
+    philosoph4.LeftArm.undraw()
+
+
+
+    # philosopher thread
 def philosopherAction(philId):
     while True:
-        time.sleep(.2)
+        time.sleep(1)
         eat(philId)
 
 
@@ -198,8 +200,10 @@ def eat(phil_id):
 
         with mutexArray[(phil_id + 1) % NUM_CHOPSTICKS]:
             chopsticks[(phil_id + 1) % NUM_CHOPSTICKS] = phil_id
+            time.sleep(1)  # eating 1 seconds
+            chopsticks[(phil_id + 1) % NUM_CHOPSTICKS] = -1 #set down left
 
-            time.sleep(.3)  # eating 3 seconds
-        time.sleep(.5)
+        time.sleep(.01) #hold left for very little time
+        chopsticks[phil_id] = -1
 
 
