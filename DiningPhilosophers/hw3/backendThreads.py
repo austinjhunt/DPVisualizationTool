@@ -1,26 +1,13 @@
-#need to translate hw3.c to python in this file
+# need to translate hw3.c to python in this file
 
 from threading import *
-from .dpsim import *
+from DiningPhilosophers.hw3 import dpsim
+from DiningPhilosophers.hw3.dpsim import *
 
 
 def main():
-
-    mainThread = Thread(target=mainThreadAction)
-
-    print("Error creating main thead!")
-    exit(1)
-
-    try:
-        mainThread.join()
-    except:
-        print("Error joining!")
-        exit(2)
-
-    return 0;
+    mainThread = dpsim.Thread(target=mainThreadAction())
+    mainThread.join()
 
 
-
-
-
-
+main()

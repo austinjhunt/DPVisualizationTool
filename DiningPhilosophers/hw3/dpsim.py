@@ -1,40 +1,47 @@
-    #Need to translate dpsim.c to python here
+# Need to translate dpsim.c to python here
 
 from threading import *
 import copy
 import time
 
-
-
-#Define constants
+# Define constants
 NUM_PHILOSOPHERS = 5
 NUM_CHOPSTICKS = 5
 
-#Define static vars
+# Define static vars
 
-#array of chopsticks
-chopsticks = [] #capacity of 5
-#array of mutexes
-mutexArray = [] #will have 5 locks
-philosopherThreads = [] #will have 5 threads
-philosopherObjects = [] #will have 5 objects
+# array of chopsticks
+chopsticks = []  # capacity of 5
+# array of mutexes
+mutexArray = []  # will have 5 locks
+philosopherThreads = []  # will have 5 threads
+philosopherObjects = []  # will have 5 objects
 
 
 def mainThreadAction():
-    for i in range(0,NUM_CHOPSTICKS):
-        chopsticks[i] = -1
+    for i in range(0, NUM_CHOPSTICKS):
+        chopsticks.append(-1)
     print("Chopsticks initialized!")
 
-    for j in range(0,NUM_PHILOSOPHERS):
+    for j in range(0, NUM_PHILOSOPHERS):
+        currPhilosopherThread = Thread(target=philosopherAction, args=[j])
+        philosopherThreads.append(currPhilosopherThread)
 
-        philosopherThreads[j] = Thread(target = philosopherAction, args = (j))
-
-        print("Error creating philosopher thread!")
-
-        philosopherThreads[j].start()
+        currPhilosopherThread.start()
 
     print("Thread created for each philosopher!")
 
+    #initialize array of mutex locks
+
+    for m in range(0, NUM_PHILOSOPHERS):
+
+        mutexArray.append(Lock())
+        print("APPENDING LOCK")
+    p0Eating=False
+    p1Eating=False
+    p2Eating=False
+    p3Eating=False
+    p4Eating=False
     while True:
         chopsticksCopy = copy.copy(chopsticks)
 
@@ -51,7 +58,7 @@ def mainThreadAction():
         if chopsticksCopy[2] == 2 and chopsticksCopy[3] == 2:
             p2Eating = True
         else:
-            p2Eating= False
+            p2Eating = False
 
         if chopsticksCopy[3] == 3 and chopsticksCopy[4] == 3:
             p3Eating = True
@@ -63,8 +70,7 @@ def mainThreadAction():
         else:
             p4Eating = False
 
-        #WHich ones are eating?
-
+        # WHich ones are eating?
 
         print("\nPhilosopher(s) ")
         if p0Eating:
@@ -79,30 +85,43 @@ def mainThreadAction():
             print("4")
         print(" are eating.\n")
 
-    #Deadlock
+        # Deadlock
         if chopsticksCopy[0] == 0 and chopsticksCopy[1] == 1 and chopsticksCopy[2] == 2 \
                 and chopsticksCopy[3] == 3 and chopsticksCopy[4] == 4:
             print("Deadlock condition (0,1,2,3,4) ... terminating.")
             break
 
-        time.sleep(1)
+        time.sleep(.1)
 
-    for k in range(0,NUM_PHILOSOPHERS):
+    for k in range(0, NUM_PHILOSOPHERS):
         philosopherThreads[k].stop()
 
     return
 
-#philosopher thread
-def philosopherAction(args):
-    philId = args
+
+# philosopher thread
+def philosopherAction(philId):
     while True:
-        time.sleep(2)
+        time.sleep(.01)
         eat(philId)
 
+
 def eat(phil_id):
+
     with mutexArray[phil_id]:
         chopsticks[phil_id] = phil_id
 
-        with mutexArray[(phil_id+1)%NUM_CHOPSTICKS]:
+        with mutexArray[(phil_id + 1) % NUM_CHOPSTICKS]:
             chopsticks[(phil_id + 1) % NUM_CHOPSTICKS] = phil_id
-            time.sleep(3) #eating 3 seconds
+            time.sleep(4)  # eating 3 seconds
+
+
+
+def main():
+
+    mainThread = Thread(target=mainThreadAction())
+
+    mainThread.join()
+
+
+main()

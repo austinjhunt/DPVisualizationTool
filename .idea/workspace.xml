@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75a7ed00-b906-471a-828e-624792d8973b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DiningPhilosophers/hw3/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/FinalProjectOS.iml" afterPath="$PROJECT_DIR$/.idea/FinalProjectOS.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/DiningPhilosophers/src/Main.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/backendThreads.py" afterPath="$PROJECT_DIR$/DiningPhilosophers/hw3/backendThreads.py" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.o" afterPath="" />
       <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py" afterPath="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/hunt.tar.gz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/hw3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/hw3.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DiningPhilosophers/hw3/hw3.o" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,10 +25,10 @@
       <file leaf-file-name="dpsim.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="192">
+              <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding>
-                <element signature="e#47#70#0" expanded="true" />
+                <element signature="e#44#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,10 +37,10 @@
       <file leaf-file-name="backendThreads.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/backendThreads.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="144">
+              <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
               <folding>
-                <element signature="e#49#72#0" expanded="true" />
+                <element signature="e#50#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,26 +51,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hw3.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/hw3.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dpsim.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3042">
-              <caret line="169" column="4" lean-forward="true" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -87,6 +70,9 @@
       <find>&amp;</find>
       <find>for</find>
       <find>;</find>
+      <find>target</find>
+      <find>mutexArra</find>
+      <find>sleep</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,8 +85,8 @@
         <option value="$PROJECT_DIR$/hw3/GraphicsClass.py" />
         <option value="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.c" />
         <option value="$PROJECT_DIR$/DiningPhilosophers/hw3/__init__.py" />
-        <option value="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py" />
         <option value="$PROJECT_DIR$/DiningPhilosophers/hw3/backendThreads.py" />
+        <option value="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py" />
       </list>
     </option>
   </component>
@@ -139,12 +125,6 @@
               <item name="DiningPhilosophers" type="462c0819:PsiDirectoryNode" />
               <item name="DiningPhilosophers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DiningPhilosophers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiningPhilosophers" type="462c0819:PsiDirectoryNode" />
-              <item name="DiningPhilosophers" type="462c0819:PsiDirectoryNode" />
-              <item name="hw3" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -168,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.backendThreads">
+  <component name="RunManager" selected="Python.dpsim">
     <configuration name="GraphicsClass" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,14 +185,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
+    <configuration name="dpsim" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DiningPhilosophers/hw3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FinalProjectOS" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.GraphicsClass" />
       <item index="1" class="java.lang.String" itemvalue="Python.backendThreads" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dpsim" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.backendThreads" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GraphicsClass" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.dpsim" />
+        <item index="1" class="java.lang.String" itemvalue="Python.backendThreads" />
+        <item index="2" class="java.lang.String" itemvalue="Python.GraphicsClass" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +241,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -269,7 +269,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#47#70#0" expanded="true" />
+            <element signature="e#44#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -318,16 +318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/backendThreads.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="e#49#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -336,12 +326,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py">
+    <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/backendThreads.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
           <folding>
-            <element signature="e#47#70#0" expanded="true" />
+            <element signature="e#50#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DiningPhilosophers/hw3/dpsim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
