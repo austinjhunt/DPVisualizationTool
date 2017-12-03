@@ -10,17 +10,29 @@ class Table:
 
 
 class PhilosopherBoi:
-    def __init__(self, r, g, b, x, y):
-        self.r = r
-        self.x = x
-        self.b = b
-        self.y = y
-        self.g = g
 
-    def PhilosopherBoi(self):
-        circ = Circle(Point(self.x, self.y), 50)
-        circ.setFill(color_rgb(self.r, self.g, self.b))
-        
+    myHead = None
+
+
+
+    def __init__(self, r, g, b, x, y):
+        self.myHead = Circle()
+        self.myHead.setFill(color_rgb(r, g, b))
+        self.myHead.setOutline(color_rgb(r, g, b))
+
+    def pickUpRight(philId):
+        if philId = 0:
+            #create arm in necesssary position for THIS philosopher
+            #draw that arm
+            
+        if philId = 1:
+            ##
+        if philId = 2:
+
+        if philId = 3:
+
+        if philId = 4:
+
     #def pickUpRight(PhilosopherId):
      #   return 1
 
@@ -48,8 +60,14 @@ def main():
     table = Table()
     table.table1.draw(win)
     table.table2.draw(win)
-    boi1 = PhilosopherBoi(255, 255, 0, point1x * 100, point1y * 100)
-    boi1.draw(win)
+    philosoph = PhilosopherBoi(255,255,0,point1x * 100, point1y * 100)
+    philosoph.myFuckingHead.draw(win)
+    #create philosopher
+    #boi1 = PhilosopherBoi(255, 255, 0, point1x * 100, point1y * 100)
+    #philosopherCircle = boi1.makePhilosopher()
+
+    #philosopherCircle.draw(win)
+
     win.getMouse()
     win.close()
 
