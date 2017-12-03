@@ -1,12 +1,13 @@
 # need to translate hw3.c to python in this file
 
-from threading import *
-from DiningPhilosophers.hw3 import dpsim
+
 from DiningPhilosophers.hw3.dpsim import *
+from DiningPhilosophers.hw3.StoppableThread import *
 
 
 def main():
-    mainThread = dpsim.Thread(target=mainThreadAction())
+    mainThread = StoppableThread(name=1, target=mainThreadAction(), args=())
+    mainThread.start()
     mainThread.join()
 
 
